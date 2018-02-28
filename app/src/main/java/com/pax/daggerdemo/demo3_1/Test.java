@@ -1,4 +1,4 @@
-package com.pax.daggerdemo.demo3;
+package com.pax.daggerdemo.demo3_1;
 
 /**
  * 那么如果一台汽车有两个引擎（也就是说Car类中有两个Engine变量）怎么办呢？

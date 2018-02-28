@@ -1,4 +1,6 @@
-package com.pax.daggerdemo.demo3;
+package com.pax.daggerdemo.demo3_1;
+
+import com.pax.daggerdemo.demo3.QualifierA;
 
 import dagger.Module;
 import dagger.Provides;
@@ -13,15 +15,15 @@ public class MakeCarModule {
     public MakeCarModule() {
     }
 
-    @QualifierA
+    @Named("engineA")
     @Provides
     Engine provideEngineA() {
-        return new Engine("gearA -> ");
+        return new Engine("engineA -> ");
     }
 
-    @QualifierB
+    @Named("engineB")
     @Provides
     Engine provideEngineB() {
-        return new Engine("gearB -> ");
+        return new Engine("engineB -> ");
     }
 }

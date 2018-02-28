@@ -1,5 +1,7 @@
 package com.pax.daggerdemo.demo1;
 
+import android.util.Log;
+
 import javax.inject.Inject;
 
 /**
@@ -13,6 +15,6 @@ public class Engine {
     }
 
     public void run() {
-        System.out.println("引擎转起来了...");
+        Log.d("Engine", "引擎转起来了...");
     }
 }

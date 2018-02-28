@@ -18,6 +18,6 @@ public class MakeCarModule {
 
     @Provides
     Engine provideEngine() {
-        return new Engine("gear");
+        return new Engine("gear -> ");
     }
 }

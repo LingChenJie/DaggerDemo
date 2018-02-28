@@ -16,7 +16,6 @@ public class Car {
          * 4.调用Dagger2生成的DaggerCarComponent来实现注入
          */
         DaggerCarComponent.builder().build().inject(this);
-        //adafs
     }
 
     public Engine getEngine() {
