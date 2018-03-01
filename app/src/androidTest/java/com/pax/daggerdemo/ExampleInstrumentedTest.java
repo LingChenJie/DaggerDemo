@@ -72,4 +72,17 @@ public class ExampleInstrumentedTest {
         assertEquals("com.pax.daggerdemo", appContext.getPackageName());
     }
 
+    @Test
+    public void testDemo4() throws Exception {
+        // Context of the app under test.
+        Context appContext = InstrumentationRegistry.getTargetContext();
+
+        com.pax.daggerdemo.demo4.Car car = new com.pax.daggerdemo.demo4.Car();
+
+        System.out.println(car.engineA.hashCode());
+        System.out.println(car.engineB.hashCode());
+
+        assertEquals("com.pax.daggerdemo", appContext.getPackageName());
+    }
+
 }

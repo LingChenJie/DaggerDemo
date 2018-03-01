@@ -10,10 +10,10 @@ import javax.inject.Inject;
 public class Car {
 
     @Inject
-    Engine engineA;
+    public Engine engineA;
 
     @Inject
-    Engine engineB;
+    public Engine engineB;
 
     public Car() {
         DaggerCarComponent.builder().makeCarModule(new MakeCarModule())
